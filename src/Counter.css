@@ -1,0 +1,49 @@
+.counter {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#counterComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 40%;
+  height: 40%;
+}
+
+#myButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#resetButton {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #dc3545; /* set color to red or any other color of your choice */
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#count {
+  margin-top: 10px;
+  font-size: 24px;
+  color: black;
+  background-color: #007bff;
+}
