@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import './WindowWidth.css'
+import { useWindowWidth } from './useWindowWidth'
 function WindowWidth() {
-    const [WindowWidth,setWindowWidth] = useState(window.innerWidth)
-    const handleWidth = () =>{
-        setWindowWidth(window.innerWidth)
-    }
+    // const [WindowWidth,setWindowWidth] = useState(window.innerWidth)
+    // const handleWidth = () =>{
+    //     setWindowWidth(window.innerWidth)
+    // }
+
+    const [state , handleWidth ] = useWindowWidth()
     useEffect(()=>{
         window.addEventListener('resize',handleWidth)
         return (()=>{
@@ -15,7 +18,7 @@ function WindowWidth() {
   return (
     <div className='widthContainer'>
         <h1 className='checkWidthHeading'>Resize TO Check Width : </h1>
-        <h3>{WindowWidth}</h3>
+        <h3>{state}</h3>
       
     </div>
   )
