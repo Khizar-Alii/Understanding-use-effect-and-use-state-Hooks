@@ -3,6 +3,7 @@ import Home from './Home';
 import Counter from './Counter';
 import StringType from './StringType';
 import WindowWidth from './WindowWidth';
+import Context from './Context';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/counter" element={<Counter/>} />
         <Route path="/stringtype" element={<StringType/>} />
         <Route path="/windowwidth" element={<WindowWidth/>} />
+        <Route path="/context" element={<Context/>} />
       </Routes>
     </div>
   );
